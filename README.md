@@ -13,7 +13,7 @@ Back-end:
 ## Installation
 
 1) Cloner le projet.
-2) Importer les dépendences:  <br />
+2) Importer les dépendences et construire le projet:  <br />
    > ``` cd path-to-workspace/tpangular``` <br />
    > ``` npm install ``` <br />
    > ``` bower install ```  <br />
