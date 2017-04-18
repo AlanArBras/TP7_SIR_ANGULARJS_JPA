@@ -1,0 +1,29 @@
+<div class="row marketing">
+    <h4>Homes found in database</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="home in homes">
+                <td>{{ home.id }}</td>
+                <td>{{ home.address | uppercase }} </td>
+                <td>
+                    <a href='#!/home/delete/{{ home.id }}'>
+                        <input type='button' value='Delete' />
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <p>
+        <a href='#!/home/add/'>
+            <input class='btn btn-defaul' type='button' value='Add new home' />
+        </a>
+    </p>
+    <br /> When deleting an item, the table content is not updated even if the database is: you have to refresh the page to see the updated table.
+</div>

@@ -1,0 +1,9 @@
+<form novalidate>
+    <legend>Add new home</legend>
+    <div class='form-group'>
+        <label for='address'>Address: </label>
+        <input type='text' class='form-control' ng-model='home.address' id='address' required />
+    </div>
+    <input type='button' class='btn btn-default' ng-click='reset()' value='Reset' />
+    <input type='submit' class='btn btn-default' ng-click='add(home)' value='Save' />
+</form>

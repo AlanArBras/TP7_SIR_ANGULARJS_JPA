@@ -1,0 +1,37 @@
+<div class="row marketing">
+    <h4>Devices found in database</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Average Consumption</th>
+                <th>Type</th>
+                <th>Maximum temperature</th>
+                <th>Minimum temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="device in devices">
+                <td> {{ device.id }} </td>
+                <td> {{ device.name }} </td>
+                <td> {{ device.avgCons }} </td>
+                <td> {{ device.type }} </td>
+                <td> {{ device.temperatureMax }} </td>
+                <td> {{ device.temperatureMin }} </td>
+                <td>
+                    <a href='#!/device/delete/{{ device.id }}'>
+                        <input type='button' value='Delete' />
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <p>
+        <a href='#!/device/add/'>
+            <input class='btn btn-defaul' type='button' value='Add new device' />
+        </a>
+    </p>
+    <br /> When deleting an item, the table content is not updated even if the database is: you have to refresh the page to see the updated table.
+</div>
