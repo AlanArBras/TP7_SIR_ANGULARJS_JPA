@@ -13,13 +13,13 @@ Back-end:
 
 ## Installation
 
-> 1) Cloner le projet.
-> 2) Importer les dépendences:  <br />
-    >> ``` cd path-to-workspace/tpangular``` <br />
-    >> ``` npm install ``` <br />
-    >> ``` bower install ```
-> 3) Modifier le fichier **persistence.xml** pour qu'il corresponde à votre base de données.
-> 4) Exécuter **tpangular/test/java/fr/istic/sir/jpa/JpaTest.java** pour alimenter la base de données.
+1) Cloner le projet.
+2) Importer les dépendences:  <br />
+   > ``` cd path-to-workspace/tpangular``` <br />
+   > ``` npm install ``` <br />
+   > ``` bower install ```  <br />
+3) Modifier le fichier **persistence.xml** pour qu'il corresponde à votre base de données.
+4) Exécuter **tpangular/test/java/fr/istic/sir/jpa/JpaTest.java** pour alimenter la base de données.
 
 
 ## Lancement
